@@ -1,45 +1,80 @@
 <form class="form-horizontal" role="form">
-    <div class="form-group">
-        <label for="team1" class="control-label col-xs-1">Team 1:</label>
-        <div class="col-xs-11 score">
-            <input type="text" class="form-control" id="team1" ng-model="dojo.team1">
+    <div class="form-group scoreboard">
+
+        <div class="col-xs-6">
+            <label for="team1" class="control-label teamName">Team 1:</label>
+            <div>
+                <input type='button' class='minusButton' value='-' ng-click='firstMinus()' />
+                <input type='text' class='score' value='0' ng-model="dojo.team1" />
+                <input type='button' class='plusButton' value='+' ng-click='firstPlus()' />
+            </div>
         </div>
 
-        <label for="team2" class="control-label col-xs-1">Team 2:</label>
-        <div class="col-xs-11 score">
-            <input type="text" class="form-control" id="team2" ng-model="dojo.team2">
+
+        <div class="col-xs-6">
+            <label for="team2" class="control-label teamName">Team 2:</label>
+            <div>
+                <input type='button' class='minusButton' value='-' ng-click='secondMinus()' />
+                <input type='text' class='score' value='0' ng-model="dojo.team2" />
+                <input type='button' class='plusButton' value='+' ng-click='secondPlus()' />
+            </div>
         </div>
 
-        <label for="team3" class="control-label col-xs-1">Team 3:</label>
-        <div class="col-xs-11 score">
-            <input type="text" class="form-control" id="team3" ng-model="dojo.team3">
+        <div class="col-xs-6">
+            <label for="team3" class="control-label teamName">Team 3:</label>
+            <div>
+                <input type='button' class='minusButton' value='-' ng-click='thirdMinus()' />
+                <input type='text' class='score' value='0' ng-model="dojo.team3" />
+                <input type='button' class='plusButton' value='+' ng-click='thirdPlus()' />
+            </div>
         </div>
 
-        <label for="team4" class="control-label col-xs-1">Team 4:</label>
-        <div class="col-xs-11 score">
-            <input type="text" class="form-control" id="team4" ng-model="dojo.team4">
+        <div class="col-xs-6">
+            <label for="team4" class="control-label teamName">Team 4:</label>
+            <div>
+                <input type='button' class='minusButton' value='-' ng-click='forthMinus()' />
+                <input type='text' class='score' value='0' ng-model="dojo.team4" />
+                <input type='button' class='plusButton' value='+' ng-click='forthPlus()' />
+            </div>
         </div>
 
-        <label for="team5" class="control-label col-xs-1">Team 5:</label>
-        <div class="col-xs-11 score">
-            <input type="text" class="form-control" id="team5" ng-model="dojo.team5">
+        <div class="col-xs-6">
+            <label for="team5" class="control-label teamName">Team 5:</label>
+            <div>
+                <input type='button' class='minusButton' value='-' ng-click='fifthMinus()' />
+                <input type='text' class='score' value='0' ng-model="dojo.team5" />
+                <input type='button' class='plusButton' value='+' ng-click='fifthPlus()' />
+            </div>
         </div>
 
-        <label for="team6" class="control-label col-xs-1">Team 6:</label>
-        <div class="col-xs-11 score">
-            <input type="text" class="form-control" id="team6" ng-model="dojo.team6">
+        <div class="col-xs-6">
+            <label for="team6" class="control-label teamName">Team 6:</label>
+            <div>
+                <input type='button' class='minusButton' value='-' ng-click='sixthMinus()' />
+                <input type='text' class='score' value='0' ng-model="dojo.team6" />
+                <input type='button' class='plusButton' value='+' ng-click='sixthPlus()' />
+            </div>
         </div>
 
-        <label for="team7" class="control-label col-xs-1">Team 7:</label>
-        <div class="col-xs-11 score">
-            <input type="text" class="form-control" id="team7" ng-model="dojo.team7">
+        <div class="col-xs-6">
+            <label for="team7" class="control-label teamName">Team 7:</label>
+            <div>
+                <input type='button' class='minusButton' value='-' ng-click='seventhMinus()' />
+                <input type='text' class='score' value='0' ng-model="dojo.team7" />
+                <input type='button' class='plusButton' value='+' ng-click='seventhPlus()' />
+            </div>
         </div>
 
-        <label for="team8" class="control-label col-xs-1">Team 8:</label>
-        <div class="col-xs-11 score">
-            <input type="text" class="form-control" id="team8" ng-model="dojo.team8">
+        <div class="col-xs-6">
+            <label for="team8" class="control-label teamName">Team 8:</label>
+            <div>
+                <input type='button' class='minusButton' value='-' ng-click='eighthMinus()' />
+                <input type='text' class='score' value='0' ng-model="dojo.team8" />
+                <input type='button' class='plusButton' value='+' ng-click='eighthPlus()' />
+            </div>
         </div>
     </div>
+    <!-- end of form -->
 </form>
 
 <div class="col-xs-6">

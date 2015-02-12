@@ -20,9 +20,9 @@
         </li>
         <li><a ng-click="scrollTo('smallestultiple')" class="pointer">Smallest Multipl</a>
         </li>
-        <li><a ng-click="scrollTo('longeststring')" class="pointer">Longest String challenge</a>
+        <li><a ng-click="scrollTo('reversewords')" class="pointer">Reverse words in a string</a>
         </li>
-        <li><a ng-click="scrollTo('pi')" class="pointer">Pi</a>
+        <li><a ng-click="scrollTo('pi')" class="pointer">Value of Pi</a>
         </li>
         <li><a ng-click="scrollTo('zigzag')" class="pointer">Zig zag matrix</a>
         </li>
@@ -34,11 +34,13 @@
         </li>
         <li><a ng-click="scrollTo('pernicious')" class="pointer">Pernicious numbers</a>
         </li>
-        <li><a ng-click="scrollTo('reversewords')" class="pointer">Reverse words in a string</a>
+        <li><a ng-click="scrollTo('caeser')" class="pointer">Caeser Cipher</a>
         </li>
-        <li><a ng-click="scrollTo('doors')" class="pointer">100 doors</a>
+        <li><a ng-click="scrollTo('subsequenctial')" class="pointer">Greatest subsequential sum</a>
         </li>
-        <li><a ng-click="scrollTo('caesar')" class="pointer">Caesar cipher</a>
+        <li><a ng-click="scrollTo('nonsquares')" class="pointer">Sequence of non-squares</a>
+        </li>
+        <!-- <li><a ng-click="scrollTo('doors')" class="pointer">100 doors</a>
         </li>
         <li><a ng-click="scrollTo('digits')" class="pointer">Iterated digits squaring</a>
         </li>
@@ -47,29 +49,21 @@
         <li><a ng-click="scrollTo('abc')" class="pointer">ABC problem</a>
         </li>
         <li><a ng-click="scrollTo('happy')" class="pointer">Happy number</a>
-        </li>
-        <li><a ng-click="scrollTo('magic')" class="pointer">Magic square of odd numbers</a>
-        </li>
-        <li><a ng-click="scrollTo('subsequenctial')" class="pointer">Greatest subsequential sum</a>
-        </li>
-        <li><a ng-click="scrollTo('nonsquares')" class="pointer">Sequence of non-squares</a>
-        </li>
+        </li> -->
     </ol>
 </div>
 
-section>h2+div+form>input
-
 <section id="gcd">
-    <h2>1. Greatest common divisor</h2>
-    <div>This task requires the finding of the greatest common divisor of two integers - 40902 & 24140</div>
+    <h3>1. Greatest common divisor</h3>
+    <div>This task requires the finding of the greatest common divisor of two integers: 40902 & 24140</div>
 
     <form ng-submit="gcd(a)">
-        <input type="text" class="form-control" placeholder="Answer" ng-model="a" ng-enter="gcd(a)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="a" ng-enter="gcd(a)">
     </form>
 </section>
 
 <section id="hailstone">
-    <h2>2. Hailstone sequence</h2>
+    <h3>2. Hailstone sequence</h3>
     <div>The Hailstone sequence of numbers can be generated from a starting positive integer, n by:
         <ul>
             <li>If n is 1 then the sequence ends</li>
@@ -80,51 +74,56 @@ section>h2+div+form>input
     </div>
 
     <form ng-submit="hailstone(b)">
-        <input type="text" class="form-control" placeholder="Answer" ng-model="b" ng-enter="hailstone(b)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="b" ng-enter="hailstone(b)">
     </form>
 </section>
 
 <section id="flatten">
-    <h2>3. Flatten a list</h2>
-    <div>Write a function to flatten the nesting in an arbitrary list of values. Your program should be able to flatten the following list:
-        <code>[[1], 2, [[3,4], 5], [[[]]], [[[6]]], 7, 8, []]</code>
+    <h3>3. Flatten a list</h3>
+    <div>Write a function to flatten the nesting in an arbitrary list of values. Your program should be able to flatten the following list (no spaces in between elements):
+        <pre>[[1], 2, [[3,4], 5], [[[]]], [[[6]]], 7, 8, []]</pre>
     </div>
 
     <form ng-submit="flatten(c)">
-        <input type="text" class="form-control" placeholder="Answer" ng-model="c" ng-enter="flatten(c)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="c" ng-enter="flatten(c)">
     </form>
 </section>
 
 <section id="largestprime">
-    <h2>4. Largest prime factor</h2>
-    <div>The prime factors of 13195 are 5, 7, 13 and 29. What is the largest prime factor of the number 600851475143 ?</div>
+    <h3>4. Largest prime factor</h3>
+    <div>
+        <p>The prime factors of 13195 are 5, 7, 13 and 29</p>
+        <p>What is the largest prime factor of the number 600851475143?</p>
+    </div>
 
     <form ng-submit="largestprime(d)">
-        <input type="text" class="form-control" placeholder="Answer" ng-model="d" ng-enter="largestprime(d)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="d" ng-enter="largestprime(d)">
     </form>
 </section>
 
 <section id="evenfibonacci">
-    <h2>5. Even fibonacci series</h2>
-    <div>Each new term in the Fibonacci sequence is generated by adding the previous two terms. By starting with 1 and 2, the first 10 terms will be: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
-        <br>By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.</div>
+    <h3>5. Even fibonacci series</h3>
+    <div>
+        <p>Each new term in the Fibonacci sequence is generated by adding the previous two terms. By starting with 1 and 2, the first 10 terms will be: 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...</p>
+        <p>By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms</p>
+    </div>
 
     <form ng-submit="evenfibonacci(e)">
-        <input type="text" class="form-control" placeholder="Answer" ng-model="e" ng-enter="evenfibonacci(e)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="e" ng-enter="evenfibonacci(e)">
     </form>
 </section>
 
 <section id="multiples">
-    <h2>6. Multiples of 3 and 5</h2>
+    <h3>6. Multiples of 3 and 5</h3>
     <div>If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.</div>
 
     <form ng-submit="multiples(f)">
-        <input type="text" class="form-control" placeholder="Answer" ng-model="f" ng-enter="multiples(f)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="f" ng-enter="multiples(f)">
     </form>
 </section>
 
 <section id="oddword">
-    <h2>7. Odd word problem</h2>
+    <h3>7. Odd word problem</h3>
     <div>You are promised an input stream consisting of English letters and punctuations. It is guaranteed that
         <ul>
             <li>the words (sequence of consecutive letters) are delimited by one and only one punctuation; that</li>
@@ -141,87 +140,218 @@ section>h2+div+form>input
     </div>
 
     <form ng-submit="oddword(g)">
-        <input type="text" class="form-control" placeholder="Answer" ng-model="g" ng-enter="oddword(g)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="g" ng-enter="oddword(g)">
     </form>
 </section>
 
 <section id="heronian">
-    <h2>8. Heronian Triangles</h2>
-    <div>Hero's formula for the area of a triangle given the length of its three sides a, b, and c is given by: A = \sqrt{s(s-a)(s-b)(s-c)}, where s is half the perimeter of the triangle; that is, s=\frac{a+b+c}{2}. Heronian triangles are triangles whose sides and area are all integers. An example is the triangle with sides 3, 4, 5 whose area is 6 (and whose perimeter is 12). The task is to Create a named function that implements Hero's formula and count of how many triangles are found with sides less than or equal to 200.</div>
-    
+    <h3>8. Heronian Triangles</h3>
+    <div>
+        <p>Hero's formula for the area of a triangle given the length of its three sides
+            <i>a</i>, <i>b</i>, and <i>c</i> is given by:
+        </p>
+        <dl>
+            <dd><img class="tex" alt="A = \sqrt{s(s-a)(s-b)(s-c)}," src="http://rosettacode.org/mw/images/math/d/8/5/d858202192abadd0bb8a60fa9dd9b013.png">
+            </dd>
+        </dl>
+        <p>where <i>s</i> is half the perimeter of the triangle; that is,
+        </p>
+        <dl>
+            <dd><img class="tex" alt="s=\frac{a+b+c}{2}." src="http://rosettacode.org/mw/images/math/e/c/5/ec50234ccbbd096784304c4048bc55a7.png">
+            </dd>
+        </dl>
+        <p><b>Heronian triangles</b> are triangles whose sides <i>and area</i> are all integers.
+        </p>
+        <dl>
+            <dd>An example is the triangle with sides 3, 4, 5 whose area is 6 (and whose perimeter is 12).
+            </dd>
+        </dl>
+        <p>Note that any triangle whose sides are all an integer multiple of 3,4,5; such as 6,8,10, will also be a Heronian triangle.
+        </p>
+        Create a function that implements Hero's formula. Count of how many triangles are found with sides less than/ equal to 200. </div>
+
     <form ng-submit="heronian(h)">
-        <input type="text" class="form-control" placeholder="Answer" ng-model="h" ng-enter="heronian(h)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="h" ng-enter="heronian(h)">
     </form>
 </section>
 
 <section id="largestpalindrome">
-	<h2>9. Largest Palindrome</h2>
-	<div>A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99. Find the largest palindrome made from the product of two 3-digit numbers.</div>
-	
-	<form ng-submit="largestpalindrome(i)">
-	    <input type="text" class="form-control" placeholder="Answer" ng-model="i" ng-enter="largestpalindrome(i)">
-	</form>
+    <h3>9. Largest Palindrome</h3>
+    <div>
+        <p>A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.</p>
+        <p>Find the largest palindrome made from the product of two 3-digit numbers</p>
+    </div>
+
+    <form ng-submit="largestpalindrome(i)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="i" ng-enter="largestpalindrome(i)">
+    </form>
 </section>
 
 <section id="smallestmultiple">
-	<h2>10. Smallest multiple</h2>
-	<div>2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder. What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?</div>
-	
-	<form ng-submit="smallestmultiple(j)">
-	    <input type="text" class="form-control" placeholder="Answer" ng-model="j" ng-enter="smallestmultiple(j)">
-	</form>
+    <h3>10. Smallest multiple</h3>
+    <div>
+        <p>2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.</p>
+        <p>What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?</p>
+    </div>
+
+    <form ng-submit="smallestmultiple(j)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="j" ng-enter="smallestmultiple(j)">
+    </form>
 </section>
 
-<section id="longeststring">
-	<h2>11. Longest string challenge</h2>
-	<div></div>
-	
-	<form ng-submit="longeststring(k)">
-	    <input type="text" class="form-control" placeholder="Answer" ng-model="k" ng-enter="longeststring(k)">
-	</form>
+<section id="reversewords">
+    <h3>11. Reverse words in a string</h3>
+    <div>
+        <p>The task is to reverse the order of all tokens in each of a number of strings and display the result; the order of characters within a token should not be modified.
+        </p>
+        <dl>
+            <dd> Reverse the following phrase:
+                <tt>"Hey you, Bub!"</tt>
+            </dd>
+        </dl>
+    </div>
+
+    <form ng-submit="reversewords(k)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="k" ng-enter="reversewords(k)">
+    </form>
 </section>
 
 <section id="pi">
-	<h2>12. Value of Pi</h2>
-	<div></div>
-	
-	<form ng-submit="pi(l)">
-		    <input type="text" class="form-control" placeholder="Answer" ng-model="l" ng-enter="pi(l)">
-		</form>
+    <h3>12. Value of Pi</h3>
+    <div>Create a program to calculate 11 digits of π (pi) after decimal</div>
+
+    <form ng-submit="pi(l)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="l" ng-enter="pi(l)">
+    </form>
 </section>
 
 <section id="zigzag">
-	<h2>13. Zig zag numbers</h2>
-	<div></div>
-	
-	<form ng-submit="zigzag(m)">
-		    <input type="text" class="form-control" placeholder="Answer" ng-model="m" ng-enter="zigzag(m)">
-		</form>
+    <h3>13. Zig zag numbers</h3>
+    <div>
+        <p>Produce a zig-zag array (n=5) and print the sum of its columns.</p>
+        <p>A zig-zag array is a square arrangement of the first
+            <tt>N<sup>2</sup>
+            </tt> integers, where the numbers increase sequentially as you zig-zag along the anti-diagonals of the array.
+        </p>
+    </div>
+
+    <form ng-submit="zigzag(m)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="m" ng-enter="zigzag(m)">
+    </form>
 </section>
 
 <section id="harshad">
-	<h2>14. Harshad number</h2>
-	<div></div>
-	
-	<form ng-submit="harshad(n)">
-		    <input type="text" class="form-control" placeholder="Answer" ng-model="n" ng-enter="harshad(n)">
-		</form>
+    <h3>14. Harshad number</h3>
+    <div>
+        <p>The Harshad or Niven numbers are positive integers &gt;= 1 that are divisible by the sum of their digits.
+        </p>
+        <p>For example, 42 is a Harshad number as 42 is divisible by (4+2) without remainder. Assume that the series is defined as the numbers in increasing order.
+        </p>
+        <p>The task is to create a function/method/procedure to generate successive members of the Harshad sequence. Use it to list the first twenty members of the sequence.
+        </p>
+        <p>Show your output here.
+        </p>
+    </div>
+
+    <form ng-submit="harshad(n)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="n" ng-enter="harshad(n)">
+    </form>
 </section>
 
 <section id="zeckendorf">
-	<h2>15. Zeckendorf</h2>
-	<div></div>
-	
-	<form ng-submit="smallestmultiple(o)">
-		    <input type="text" class="form-control" placeholder="Answer" ng-model="o" ng-enter="smallestmultiple(o)">
-		</form>
+    <h3>15. Zeckendorf</h3>
+    <div>
+        <p>Just as numbers can be represented in a positional notation as sums of multiples of the powers of ten (decimal) or two (binary); all the positive integers can be represented as the sum of one or zero times the distinct members of the Fibonacci series.
+        </p>
+        <p>Recall that the first six distinct Fibonacci numbers are: 1, 2, 3, 5, 8, 13. The decimal number eleven can be written as 0*13 + 1*8 + 0*5 + 1*3 + 0*2 + 0*1 or 010100 in positional notation where the columns represent multiplication by a particular member of the sequence. Leading zeroes are dropped so that 11 decimal becomes 10100.
+        </p>
+        <p>10100 is not the only way to make 11 from the Fibonacci numbers however; 0*13 + 1*8 + 0*5 + 0*3 + 1*2 + 1*1 or 010011 would also represent decimal 11. For a true Zeckendorf number there is the added restriction that <i>no two consecutive Fibonacci numbers can be used</i> which leads to the former unique solution.
+        </p>
+        <p>The task is to generate and show the Zeckendorf number representations for n = 20</p>
+    </div>
+
+    <form ng-submit="zeckendorf(o)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="o" ng-enter="zeckendorf(o)">
+    </form>
 </section>
 
 <section id="fibonacci">
-	<h2>16. n-series Fibonacci</h2>
-	<div></div>
-	
-	<form ng-submit="fibonacci(p)">
-		    <input type="text" class="form-control" placeholder="Answer" ng-model="p" ng-enter="fibonacci(p)">
-		</form>
+    <h3>16. n-series Fibonacci</h3>
+    <div>
+        <p>These number series are an expansion of the ordinary Fibonacci sequence where</p>
+        <ol>
+            <li> For <span class="texhtml" dir="ltr"><i>n</i> = 2</span> we have the Fibonacci sequence; with initial values <span class="texhtml" dir="ltr">[1,1]</span> and <img class="tex" alt="F_k^2 = F_{k-1}^2 + F_{k-2}^2" src="http://rosettacode.org/mw/images/math/e/a/8/ea8fba6081e51a2e4f0cd0d58c3c7032.png">
+            </li>
+            <li> For <span class="texhtml" dir="ltr"><i>n</i> = 3</span> we have the tribonacci sequence; with initial values <span class="texhtml" dir="ltr">[1,1,2]</span> and <img class="tex" alt="F_k^3 = F_{k-1}^3 + F_{k-2}^3 + F_{k-3}^3" src="http://rosettacode.org/mw/images/math/a/9/6/a96e7fe6a7eb7371ab85f6a135b84056.png">
+            </li>
+            <li> For <span class="texhtml" dir="ltr"><i>n</i> = 4</span> we have the tetranacci sequence; with initial values <span class="texhtml" dir="ltr">[1,1,2,4]</span> and <img class="tex" alt="F_k^4 = F_{k-1}^4 + F_{k-2}^4 + F_{k-3}^4 + F_{k-4}^4" src="http://rosettacode.org/mw/images/math/e/a/2/ea2b3ddffa2a578dbe5d923abd914aa5.png">
+                <br>...
+            </li>
+            <li> For general <span class="texhtml" dir="ltr"><i>n</i> &gt; 2</span> we have the Fibonacci <span class="texhtml" dir="ltr"><i>n</i></span>-step sequence - <img class="tex" alt="F_k^n" src="http://rosettacode.org/mw/images/math/f/6/e/f6e22469b4396d8fa34e202e5c716abc.png">; with initial values of the first <span class="texhtml" dir="ltr"><i>n</i></span> values of the <span class="texhtml" dir="ltr">(<i>n</i> − 1)</span>'th Fibonacci <span class="texhtml" dir="ltr"><i>n</i></span>-step sequence <img class="tex" alt="F_k^{n-1}" src="http://rosettacode.org/mw/images/math/7/9/2/79293ba1053dbc3f23c579b2e8141034.png">; and <span class="texhtml" dir="ltr"><i>k</i></span>'th value of this <span class="texhtml" dir="ltr"><i>n</i></span>'th sequence being <img class="tex" alt="F_k^n = \sum_{i=1}^{(n)} {F_{k-i}^{(n)}}" src="http://rosettacode.org/mw/images/math/c/5/3/c53daded435e185afefbac417fef75e7.png">
+            </li>
+        </ol>
+        <p>Print the first 15 numbers for a heptanacci sequence (n=7)</p>
+    </div>
+
+    <form ng-submit="fibonacci(p)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="p" ng-enter="fibonacci(p)">
+    </form>
+</section>
+
+<section id="pernicious">
+    <h3>17. Pernicious numbers</h3>
+    <div>
+        <p>A <i>pernicious number</i> is a positive integer whose population count is a prime.
+            <br>The <i>population count</i> (also known as <i>pop count</i>) is the number of <code>1</code>'s (ones) in the binary representation of a non-negative integer.
+            <br> For example, <span class="texhtml" dir="ltr">22</span> (which is <code>10110</code> in binary) has a population count of <span class="texhtml" dir="ltr">3</span>, which is prime and so <span class="texhtml" dir="ltr">22</span> is a pernicious number.
+        </p>Print the first 25 pernicious numbers</div>
+
+    <form ng-submit="pernicious(q)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="q" ng-enter="pernicious(q)">
+    </form>
+</section>
+
+<section id="caeser">
+    <h3>17. Caesar cipher</h3>
+    <div>
+        <p>Implement a Caesar cipher, both encoding and decoding. The key is an integer from 1 to 25.
+        </p>
+        <p>This cipher rotates (either towards left or right) the letters of the alphabet (A to Z).
+        </p>
+        <p>The encoding replaces each letter with the 1st to 25th next letter in the alphabet (wrapping Z to A). So key 2 encrypts "HI" to "JK", but key 20 encrypts "HI" to "BC". Translate the following:
+        </p><pre>The quick brown fox jumped over the lazy dogs</pre>
+    </div>
+
+    <form ng-submit="caeser(r)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="r" ng-enter="caeser(r)">
+    </form>
+</section>
+
+<section id="subsequenctial">
+    <h3>19. Greatest subsequential sum</h3>
+    <div>
+        <p>Given a sequence of integers, find a continuous subsequence which maximizes the sum of its elements, that is, the elements of no other single subsequence add up to a value larger than this one.</p>
+        <p>An empty subsequence is considered to have the sum 0; thus if all elements are negative, the result must be the empty sequence.</p>
+        <p>Input is [-1,-2,3,5,6,-2,-1,4,-4,2,-1]</p>
+    </div>
+
+    <form ng-submit="subsequenctial(s)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="s" ng-enter="subsequenctial(s)">
+    </form>
+</section>
+
+<section id="nonsquares">
+    <h3>20. Sequence of non-squares</h3>
+    <div>
+        Show that the following remarkable formula gives the sequence of non-square natural numbers:
+        <pre> n + floor(1/2 + sqrt(n))</pre> Print out the values for n in the range 1 to 22 (comma-separated)
+    </div>
+
+    <form ng-submit="nonsquares(t)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="t" ng-enter="nonsquares(t)">
+    </form>
+</section>
+
+<section>
+    <h3>End of Questions</h3>
 </section>
