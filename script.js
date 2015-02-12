@@ -85,163 +85,255 @@ app.controller('QuestionsCtrl', ['$scope', '$location', '$anchorScroll',
             $anchorScroll();
         };
 
+        $scope.hello = function(answer) {
+            if (answer == 'Hello World') {
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
+            } else {
+                sweetAlert("Oops...", "Something went wrong!", "error");
+            }
+        };
+
         $scope.gcd = function(answer) {
             if (answer == 34) {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.hailstone = function(answer) {
             if (answer == 112) {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.flatten = function(answer) {
             if (answer == '[1,2,3,4,5,6,7,8]') {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.largestprime = function(answer) {
             if (answer == 6857) {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.evenfibonacci = function(answer) {
             if (answer == 4613732) {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.multiples = function(answer) {
             if (answer == 233168) {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.oddword = function(answer) {
             if (answer == 'what,si,the;gninaem,of:efil.') {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.heronian = function(answer) {
             if (answer == 517) {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.largestpalindrome = function(answer) {
             if (answer == 906609) {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.smallestmultiple = function(answer) {
             if (answer == 232792560) {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.reversewords = function(answer) {
             if (answer == 'Bub! you, Hey') {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.pi = function(answer) {
             if (answer == 3.14285714286) {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.zigzag = function(answer) {
             if (answer == '[24, 42, 60, 78, 96]') {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.harshad = function(answer) {
             if (answer == '[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 18, 20, 21, 24, 27, 30, 36, 40, 42]') {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.zeckendorf = function(answer) {
             if (answer == 101010) {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.fibonacci = function(answer) {
             if (answer == '[1, 1, 2, 4, 8, 16, 32, 64, 127, 253, 504, 1004, 2000, 3984, 7936]') {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.pernicious = function(answer) {
             if (answer == '[3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 17, 18, 19, 20, 21, 22, 24, 25, 26, 28, 31, 33, 34, 35, 36]') {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.caeser = function(answer) {
             if (answer == 'Esp bftnv mczhy qzi ufxapo zgpc esp wlkj ozrd') {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.subsequenctial = function(answer) {
             if (answer == '[3, 5, 6, -2, -1, 4]') {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 
         $scope.nonsquares = function(answer) {
             if (answer == '[2, 3, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 17, 18, 19, 20, 21, 22, 23, 24, 26, 27]') {
-                alert('Well done')
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
             } else {
-                alert('Wrong answer. Try again')
+                sweetAlert("Oops...", "Something went wrong!", "error");
             }
         };
 

@@ -1,4 +1,5 @@
 <div>
+    <h3>Questionnaire for the Python Dojo:</h3>
     <ol>
         <li><a ng-click="scrollTo('gcd')" class="pointer">Greatest common divisor</a>
         </li>
@@ -18,7 +19,7 @@
         </li>
         <li><a ng-click="scrollTo('largestpalindrome')" class="pointer">Largest palindrome product</a>
         </li>
-        <li><a ng-click="scrollTo('smallestultiple')" class="pointer">Smallest Multipl</a>
+        <li><a ng-click="scrollTo('smallestultiple')" class="pointer">Smallest Multiple</a>
         </li>
         <li><a ng-click="scrollTo('reversewords')" class="pointer">Reverse words in a string</a>
         </li>
@@ -52,6 +53,15 @@
         </li> -->
     </ol>
 </div>
+
+<section id="demo">
+    <h3>0. Hello World</h3>
+    <div>Type 'Hello World' in the text-box below</div>
+
+    <form ng-submit="hello(z)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="z" ng-enter="hello(z)">
+    </form>
+</section>
 
 <section id="gcd">
     <h3>1. Greatest common divisor</h3>
@@ -126,12 +136,12 @@
     <h3>7. Odd word problem</h3>
     <div>You are promised an input stream consisting of English letters and punctuations. It is guaranteed that
         <ul>
-            <li>the words (sequence of consecutive letters) are delimited by one and only one punctuation; that</li>
-            <li>the stream will begin with a word; that</li>
-            <li>the words will be at least one letter long; and that</li>
-            <li>a full stop (.) appears after, and only after, the last word.</li>
+            <li>the words (sequence of consecutive letters) are delimited by one and only one punctuation</li>
+            <li>the stream will begin with a word</li>
+            <li>the words will be at least one letter long</li>
+            <li>a full stop (.) appears after, and only after, the last word</li>
         </ul>
-        For example, what,is,the;meaning,of:life. is such a stream with six words. Your task is to reverse the letters in every other word while leaving punctuations intact, while observing the following restrictions:
+        <p>For the input: "what,is,the;meaning,of:life.", reverse the letters in every other word while leaving punctuations intact, while observing the following restrictions:</p>
         <ul>
             <li>Only I/O allowed is reading or writing one character at a time, which means: no reading in a string, no peeking ahead, no pushing characters back into the stream, and no storing characters in a global variable for later use</li>
             <li>You are not to explicitly save characters in a collection data structure, such as arrays, strings, hash tables, etc, for later reversal</li>
@@ -332,7 +342,7 @@
     <div>
         <p>Given a sequence of integers, find a continuous subsequence which maximizes the sum of its elements, that is, the elements of no other single subsequence add up to a value larger than this one.</p>
         <p>An empty subsequence is considered to have the sum 0; thus if all elements are negative, the result must be the empty sequence.</p>
-        <p>Input is [-1,-2,3,5,6,-2,-1,4,-4,2,-1]</p>
+        <p>Input is [-1, -2, 3, 5, 6, -2, -1, 4, -4, 2, -1]</p>
     </div>
 
     <form ng-submit="subsequenctial(s)">
