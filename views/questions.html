@@ -91,7 +91,7 @@
 <section id="flatten">
     <h3 class="question-header">3. Flatten a list</h3>
     <div class="question-description">Write a function to flatten the nesting in an arbitrary list of values. Your program should be able to flatten the following list (no spaces in between elements):
-        <pre>[[1], 2, [[3,4], 5], [[[]]], [[[6]]], 7, 8, []]</pre>
+        <pre>[[6], 4, [[3,8], 3], [[[]]], [[[8]]], 2, 5, []]</pre>
     </div>
 
     <form ng-submit="flatten(c)">
@@ -228,7 +228,7 @@
 
 <section id="pi">
     <h3 class="question-header">12. Value of Pi</h3>
-    <div class="question-description">Create a program to calculate 11 digits of π (pi) after decimal</div>
+    <div class="question-description">Create a program to calculate 48 digits of π (pi) after decimal</div>
 
     <form ng-submit="pi(l)">
         <input type="text" class="form-control answerText" placeholder="Answer" ng-model="l" ng-enter="pi(l)">
@@ -243,6 +243,7 @@
             <tt>N<sup>2</sup>
             </tt> integers, where the numbers increase sequentially as you zig-zag along the anti-diagonals of the array.
         </p>
+        <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/4/43/JPEG_ZigZag.svg/240px-JPEG_ZigZag.svg.png" />
     </div>
 
     <form ng-submit="zigzag(m)">
