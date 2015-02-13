@@ -337,6 +337,66 @@ app.controller('QuestionsCtrl', ['$scope', '$location', '$anchorScroll',
             }
         };
 
+        $scope.digits = function(answer) {
+            if (answer == 85744333) {
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
+            } else {
+                sweetAlert("Oops...", "Something went wrong!", "error");
+            }
+        };
+
+        $scope.factorials = function(answer) {
+            if (answer == '[0, 1, 2, 4, 10, 34, 154, 874, 5914, 46234, 409114]') {
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
+            } else {
+                sweetAlert("Oops...", "Something went wrong!", "error");
+            }
+        };
+
+        $scope.abc = function(answer) {
+            if (answer == 'true') {
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
+            } else {
+                sweetAlert("Oops...", "Something went wrong!", "error");
+            }
+        };
+
+        $scope.happy = function(answer) {
+            if (answer == '[1, 7, 10, 13, 19, 23, 28, 31]') {
+                sweetAlert({
+                    title: "Sweet!",
+                    text: "Good job! Let's try one more!",
+                    imageUrl: "thumbs-up.jpg"
+                })
+            } else {
+                sweetAlert("Oops...", "Something went wrong!", "error");
+            }
+        };
+
+        $scope.semiprime = function(answer) {
+                    if (answer == '[4, 6, 9, 10, 14, 15, 21, 22, 25, 26, 33, 34, 35, 38, 39, 46, 49, 51, 55, 57, 58, 62, 65, 69, 74, 77, 82, 85, 86, 87, 91, 93, 94, 95]') {
+                        sweetAlert({
+                            title: "Sweet!",
+                            text: "Good job! Let's try one more!",
+                            imageUrl: "thumbs-up.jpg"
+                        })
+                    } else {
+                        sweetAlert("Oops...", "Something went wrong!", "error");
+                    }
+                };
+
     }
 ]);
 

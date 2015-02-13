@@ -41,8 +41,6 @@
         </li>
         <li><a ng-click="scrollTo('nonsquares')" class="pointer">Sequence of non-squares</a>
         </li>
-        <!-- <li><a ng-click="scrollTo('doors')" class="pointer">100 doors</a>
-        </li>
         <li><a ng-click="scrollTo('digits')" class="pointer">Iterated digits squaring</a>
         </li>
         <li><a ng-click="scrollTo('factorials')" class="pointer">Left factorials</a>
@@ -50,7 +48,9 @@
         <li><a ng-click="scrollTo('abc')" class="pointer">ABC problem</a>
         </li>
         <li><a ng-click="scrollTo('happy')" class="pointer">Happy number</a>
-        </li> -->
+        </li>
+        <li><a ng-click="scrollTo('semiprime')" class="pointer">Semiprime</a>
+        </li>
     </ol>
 </div>
 
@@ -359,6 +359,182 @@
 
     <form ng-submit="nonsquares(t)">
         <input type="text" class="form-control answerText" placeholder="Answer" ng-model="t" ng-enter="nonsquares(t)">
+    </form>
+</section>
+
+<section id="digits">
+    <h3 class="question-header">21. Iterated digits squaring</h3>
+    <div class="question-description">
+        <p>If you add the square of the digits of a Natural number (an integer bigger than zero), you always end with either 1 or 89:
+        </p>
+        <pre>15 -&gt; 26 -&gt; 40 -&gt; 16 -&gt; 37 -&gt; 58 -&gt; 89
+        <br>7 -&gt; 49 -&gt; 97 -&gt; 130 -&gt; 10 -&gt; 1</pre>
+        <dl>
+            <dt>Task</dt>
+            <dd>
+            </dd>
+            <dd> Count how many number chains for integers 1 &lt;= n &lt; 100_000_000 end with a value 89.
+            </dd>
+        </dl>
+    </div>
+
+    <form ng-submit="digits(u)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="u" ng-enter="digits(u)">
+    </form>
+</section>
+
+<section id="factorials">
+    <h3 class="question-header">22. Sequence of non-squares</h3>
+    <div class="question-description">
+        <p><i>Left factorials</i>, <span class="texhtml" dir="ltr">!<i>n</i></span>, may refer to either <i>subfactorials</i> or to <i>factorial sums</i>; the same notation can be confusingly seen used for the two different definitions.
+        </p>
+        <p>Sometimes, <i>subfactorials</i> (also known as <i>derangements</i>) use any of the notations:
+        </p>
+        <dl>
+            <dd>
+                <dl>
+                    <dd>
+                        <dl>
+                            <dd>
+                                <dl>
+                                    <dd>
+                                        <dl>
+                                            <dd>
+                                                <dl>
+                                                    <dd>
+                                                        <dl>
+                                                            <dd>
+                                                                <ul>
+                                                                    <li> &nbsp; <span style="font-family:serif">!<i>n</i>`</span>
+                                                                    </li>
+                                                                    <li> &nbsp; <span class="texhtml" dir="ltr">!<i>n</i>'</span>
+                                                                    </li>
+                                                                    <li> &nbsp; <span style="font-family:serif"><i>n</i>¡</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </dd>
+                                                        </dl>
+                                                    </dd>
+                                                </dl>
+                                            </dd>
+                                        </dl>
+                                    </dd>
+                                </dl>
+                            </dd>
+                        </dl>
+                    </dd>
+                </dl>
+            </dd>
+        </dl>
+        <p>
+            <br>This Code task will be using this formula for <i>left factorial</i>:
+        </p>
+        <dl>
+            <dd><img class="tex" alt="&nbsp;!n = \sum_{k=0}^{n-1} k! " src="http://rosettacode.org/mw/images/math/8/4/9/849352e8826f2519f03a5592304ca834.png">
+            </dd>
+        </dl>
+        <p>where
+        </p>
+        <p>Display the left factorials for:
+        </p>
+        <ul>
+            <li> zero through ten (inclusive)
+            </li>
+        </ul>
+    </div>
+
+    <form ng-submit="factorials(v)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="v" ng-enter="factorials(v)">
+    </form>
+</section>
+
+<section id="abc">
+    <h3 class="question-header">23. ABC problem</h3>
+    <div class="question-description">
+        <p>You are given a collection of ABC blocks. Just like the ones you had when you were a kid. There are twenty blocks with two letters on each block. You are guaranteed to have a complete alphabet amongst all sides of the blocks. The sample blocks are:
+        </p>
+        <dl>
+            <dd>((B O)
+            </dd>
+            <dd> (X K)
+            </dd>
+            <dd> (D Q)
+            </dd>
+            <dd> (C P)
+            </dd>
+            <dd> (N A)
+            </dd>
+            <dd> (G T)
+            </dd>
+            <dd> (R E)
+            </dd>
+            <dd> (T G)
+            </dd>
+            <dd> (Q D)
+            </dd>
+            <dd> (F S)
+            </dd>
+            <dd> (J W)
+            </dd>
+            <dd> (H U)
+            </dd>
+            <dd> (V I)
+            </dd>
+            <dd> (A N)
+            </dd>
+            <dd> (O B)
+            </dd>
+            <dd> (E R)
+            </dd>
+            <dd> (F S)
+            </dd>
+            <dd> (L Y)
+            </dd>
+            <dd> (P C)
+            </dd>
+            <dd> (Z M))
+            </dd>
+        </dl>
+        <p>The goal of this task is to write a function that takes a string 'CONFUSE' and can determine whether you can spell the word with the given collection of blocks - print your answer as true or false. The rules are simple:
+        </p>
+        <ol>
+            <li>Once a letter on a block is used that block cannot be used again
+            </li>
+            <li>The function should be case-insensitive
+            </li>
+        </ol>
+    </div>
+
+    <form ng-submit="abc(w)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="w" ng-enter="abc(w)">
+    </form>
+</section>
+
+<section id="happy">
+    <h3 class="question-header">24. Happy numbers</h3>
+    <div class="question-description">
+        <dl>
+            <dd>A <a href="http://en.wikipedia.org/wiki/Happy_number" class="extiw" title="wp:Happy number">happy number</a> is defined by the following process. Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers for which this process ends in 1 are happy numbers, while those that do not end in 1 are unhappy numbers. Display an example of your output here.
+            </dd>
+        </dl>
+        <p><b>Task:</b> Find and print the first 8 happy numbers.
+        </p>
+    </div>
+
+    <form ng-submit="happy(x)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="x" ng-enter="happy(x)">
+    </form>
+</section>
+
+<section id="semiprime">
+    <h3 class="question-header">25. Semiprime</h3>
+    <div class="question-description">
+        <p>Semiprime numbers are natural numbers that are products of exactly two (possibly equal) prime numbers. Example: 1679 = 23 × 73</p>
+        <p>Output all semiprimes below 100</p>
+    </div>
+
+    <form ng-submit="semiprime(y)">
+        <input type="text" class="form-control answerText" placeholder="Answer" ng-model="y" ng-enter="semiprime(y)">
     </form>
 </section>
 
