@@ -351,6 +351,9 @@ app.config(function($routeProvider) {
             templateUrl: 'views/questions.html',
             controller: 'QuestionsCtrl'
         })
+        .when('/slides', {
+            templateUrl: 'views/slides.html'
+        })
         .otherwise({
             redirectTo: '/'
         });
